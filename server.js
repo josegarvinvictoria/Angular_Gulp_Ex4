@@ -8,6 +8,6 @@ app.use("/api/llibres", require("./controllers/api/llibres"));
 app.use("/",require("./controllers/static"));
 
 //process.env.PORT
-app.listen(8080 , function() {
-    console.log("Server started on", 8080);
+app.listen(process.env.PORT , function() {
+    console.log("Server started on", process.env.PORT);
 });
